@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+<body bgcolor="DarkSeaGreen">
+<u><h1 style="color:Purple" align="center">Update Your Fields</h1></u><br>
+<form method="POST" enctype="multipart/form-data" align="center">
+    {% csrf_token %}
+    {{form.as_p}}
+    <br>
+    <h1><input type="submit" style="color:red;font-size:25px"></h1>
+</form>
+</body>
+</html>
